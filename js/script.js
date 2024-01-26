@@ -4,3 +4,27 @@
 // output in due decimali
 
 
+const busRate=0.21;
+
+const age=Number( prompt("inserisci la tua età") );
+const travel=Number( prompt("inserisci la distanza in chilometri del tragitto") );
+
+let price= busRate * travel;
+let totalPrice=0;
+
+
+if(age>=65){
+    const discount =  price * 40 / 100;
+    totalPrice= price - discount;
+
+}else if (age <18) {
+    
+    const discount =  price * 20 / 100;
+    totalPrice= price - discount;
+
+} else {
+
+    totalPrice = price * travel; 
+
+}
+
