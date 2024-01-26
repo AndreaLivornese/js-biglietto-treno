@@ -26,6 +26,6 @@ if(age>=65){
 
 } else {
 
-    document.getElementById("result").innerHTML += price16.toFixed(2) + "€";
+    document.getElementById("result").innerHTML += price.toFixed(2) + "€";
 }
 
