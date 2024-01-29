@@ -14,4 +14,15 @@ function toFahrenheit(){
 }
     
     
+// funzione che calcola la media tra tre numeri
+function media(){
+    let n1,n2,n3; //input
+
+    const media = (n1 + n2 + n3) / 3;
+
+    // output
+}
+
+
+
     
