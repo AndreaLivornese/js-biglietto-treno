@@ -5,11 +5,11 @@
 // (°C * 1.8) + 32 = °F
 function toFahrenheit(){
 
-    let celsius; //input
+    let celsius = Number(document.getElementById("celsius").value);
     
     const fahrenheit= (celsius * 1.8) + 32;
     
-    // output
+    document.getElementById("fahrenheit").innerHTML = fahrenheit.toFixed(1) + "°F";
     
 }
     
