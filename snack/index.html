@@ -48,7 +48,15 @@
             </div>
     
             <!-- colonna gioco sasso carta forbici -->
-            <div class="col-4"></div>
+            <div class="col-4">
+                <form>
+                    <label for="scelta-utente">Inserisci qui la tua scelta</label>
+                    <input type="text" class="form-control" id="scelta-utente">
+                    <p id="gioco"></p>
+                    <p id="result"></p>
+                    <input type="button" class="btn btn-primary " onclick="playSCF()" value="Gioca">
+                </form>
+            </div>
         </div>
     </div>
 
