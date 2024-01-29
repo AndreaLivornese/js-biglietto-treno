@@ -13,22 +13,43 @@
 <body>
 
     <div class="container">
-        
-        <!-- colonna conversione -->
-        <div class="col-4">
-            <form>
-                <label for="celsius">Inserisci qui il valore</label>
-                <input type="text" class="form-control" placeholder="es. 100" id="celsius">
-                <p id="fahrenheit"></p>
-                <input type="button" class="btn btn-primary " onclick="toFahrenheit()" value="Converti">
-            </form>
+        <div class="row">
+            <!-- colonna conversione -->
+            <div class="col-4">
+                <form>
+                    <label for="celsius">Inserisci qui il valore</label>
+                    <input type="number" class="form-control" placeholder="es. 100" id="celsius">
+                    <p id="fahrenheit"></p>
+                    <input type="button" class="btn btn-primary " onclick="toFahrenheit()" value="Converti">
+                </form>
+            </div>
+    
+            <!-- colonna media -->
+            <div class="col-4">
+                <form>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="n1">Primo numero</label>
+                            <input type="number" class="form-control" id="n1">
+                        </div>
+                        <div class="col-4">
+                            <label for="n2">Secondo numero</label>
+                            <input type="number" class="form-control" id="n2">
+                        </div>
+                        <div class="col-4">
+                            <label for="n3">Terzo numero</label>
+                            <input type="number" class="form-control" id="n3">
+                        </div>
+                    </div>
+
+                    <p id="media"></p>
+                    <input type="button" class="btn btn-primary " onclick="media()" value="Calcola">
+                </form>
+            </div>
+    
+            <!-- colonna gioco sasso carta forbici -->
+            <div class="col-4"></div>
         </div>
-
-        <!-- colonna media -->
-        <div class="col-4"></div>
-
-        <!-- colonna gioco sasso carta forbici -->
-        <div class="col-4"></div>
     </div>
 
     
