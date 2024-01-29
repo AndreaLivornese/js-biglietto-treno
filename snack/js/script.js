@@ -16,11 +16,13 @@ function toFahrenheit(){
     
 // funzione che calcola la media tra tre numeri
 function media(){
-    let n1,n2,n3; //input
+    let n1= Number(document.getElementById("n1").value);
+    let n2= Number(document.getElementById("n2").value);
+    let n3= Number(document.getElementById("n3").value);
 
     const media = (n1 + n2 + n3) / 3;
 
-    // output
+    document.getElementById("media").innerHTML = media.toFixed(2);
 }
 
 
